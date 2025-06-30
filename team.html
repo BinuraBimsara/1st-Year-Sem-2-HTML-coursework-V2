@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ====FOR FONTS===== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- ====FOR FONTS===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- ====FOR FONTS===== -->
+    <style>
+        .team-container {
+            color: white;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .team-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 250px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.5s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-20px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .team-member:hover img {
+            transform: translateY(-10px);
+        }
+
+        .team-member h4 {
+            margin: 15px 0 10px;
+            color: #fff;
+        }
+
+        .team-member p {
+            opacity: 0;
+            color: #fff;
+            transition: opacity 0.5s ease-in;
+        }
+
+        .team-member:hover p {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="linkedpages">
+    <nav class="custom-navbar">
+        <a href="homepage.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"
+                alt="Home"> Home</a>
+
+
+        <div class="nav-links" id="navLinks">
+            <a href="Splashscreen.html">SplashScreen</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="userProfile.html">User Profile</a>
+            <a href="#">Sitemap</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <div class="background2">
+        <div class="team-container" id="teambdy">
+            <h2 class="team-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Member 1">
+                    <h4>Student 1</h4>
+                    <p>Role: UI Designer<br>Tasks: Splash Screen, Volunteer Page</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Member 2">
+                    <h4>Student 2</h4>
+                    <p>Role: Frontend Developer<br>Tasks: Home Page, Table, Template</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Student 3">
+                    <h4>Student 3 (You)</h4>
+                    <p>Role: Forms & Presentation<br>Tasks: Feedback, Team Page, Content</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Member 4">
+                    <h4>Student 4</h4>
+                    <p>Role: UX Specialist<br>Tasks: Profile Page, Sitemap</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>2025 Climate Awareness Initiative.</p>
+            <p>© 2025 NIGGAS CAFE. All rights reserved.</p>
+            <p>Developed by: Binura | Onila | Oneth | Vipura</p>
+        </footer>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plain HTML Navbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+    }
+
+.background2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.634);
+}
+
+.background2::before {
+    content: ' ';
+    background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 70%;
+    filter: blur(1px);
+    z-index: -1;
+
+}
+
+    .custom-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: fixed;
+      width: 69%;
+      top: 0;
+      z-index: 1050;
+      background-color: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(3px);
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 8px 12px;
+      transition: background-color 0.7s;
+    }
+
+    .custom-navbar a:hover {
+      background-color: rgb(0, 0, 0);
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+      vertical-align: middle;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+    <a href="homepage.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"
+        alt="Home"> Home</a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="Splashscreen.html">SplashScreen</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="table.html">Table</a>
+      <a href="userProfile.html">User Profile</a>
+      <a href="#">Sitemap</a>
+      <a href="team.html">Team</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </nav>
+
+  <div class="background2">
+  </div>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

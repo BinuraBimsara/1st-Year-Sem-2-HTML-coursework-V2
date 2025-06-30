@@ -1,0 +1,211 @@
+* {
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
+.background2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.634);
+    padding-top: 60px;
+    flex-direction: column;
+}
+
+.background2::before {
+    content: '';
+    background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 70%;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+/* NAVBAR============================NAVBAR=============================NAVBAR============================NAVBAR============================= */
+
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition: background-color 0.7s;
+}
+
+.custom-navbar a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+/* NAVBAR============================NAVBAR=============================NAVBAR============================NAVBAR============================= */
+
+
+body {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+#redirect {
+    width: 200px;
+    height: 300px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.374);
+    color: aliceblue;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#redirect:hover {
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+    transition: 0.5s;
+
+
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
+
+
+
+/* ========================LINKED PAGES======================== ========================LINKED PAGES ========================*/
+.custom-navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar2 a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition: background-color 0.7s;
+}
+
+.custom-navbar2 a:hover {
+    background-color: #ffffff;
+}
+
+.linkedpages {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main {
+    padding: 100px 30px 30px 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    color: black;
+
+}
+
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn {
+    background-color: green;
+    display: block;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: fit-content;
+
+}
