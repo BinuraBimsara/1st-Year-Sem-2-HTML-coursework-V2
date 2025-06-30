@@ -5,9 +5,20 @@
     box-sizing: border-box;
 }
 
+/* ========================HOMEPAGE================================================HOMEPAGE========================*/
+/* ========================SPLASHSCREEN================================================SPLASHSCREEN========================*/
 
+body {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
 
-/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
+body.fade-out {
+    opacity: 0;
+}
+
+/* END==========END==============SPLASHSCREEN==============END=======================END===========SPLASHSCREEN============END============*/
+
 .background2 {
     min-height: 100vh;
     display: flex;
@@ -36,6 +47,7 @@
     z-index: -1;
 }
 
+/* ========================HOMEPAGE================================================HOMEPAGE========================*/
 /* NAVBAR============================NAVBAR=============================NAVBAR============================NAVBAR============================= */
 
 .custom-navbar {
@@ -83,36 +95,7 @@
     display: flex;
 }
 
-/* NAVBAR============================NAVBAR=============================NAVBAR============================NAVBAR============================= */
-
-
-body {
-    opacity: 1;
-    transition: opacity 1s ease-out;
-}
-
-body.fade-out {
-    opacity: 0;
-}
-
-#redirect {
-    width: 200px;
-    height: 300px;
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.374);
-    color: aliceblue;
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    transition: background-color 0.5s, transform 0.5s;
-}
-
-#redirect:hover {
-    background-color: rgb(0, 0, 0);
-    transform: translateY(-10px);
-    transition: 0.5s;
-
-
-}
+/* END==========END==============NAVBAR==============END=======================END===========NAVBAR ============END============*/
 
 footer {
     background-color: #222;
@@ -126,12 +109,10 @@ footer p {
     margin: 5px 0;
 }
 
-
-/* ========================HOMEPAGE======================== ========================HOMEPAGE========================*/
-
+/* END==========END==============HOMEPAGE==============END=======================END===========HOMEPAGE============END============*/
 
 
-/* ========================LINKED PAGES======================== ========================LINKED PAGES ========================*/
+/* ========================CONTENT PAGES================================================CONTENT PAGES ========================*/
 .custom-navbar2 {
     display: flex;
     align-items: center;
@@ -161,7 +142,7 @@ footer p {
     background-color: #ffffff;
 }
 
-.linkedpages {
+.contentpages {
     font-family: Arial, sans-serif;
     background-color: #000000;
     background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
@@ -194,12 +175,10 @@ section p {
 
 }
 
-
 .centered-table {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .btn {
     background-color: green;
@@ -211,3 +190,5 @@ section p {
     width: fit-content;
 
 }
+
+/* END==========END==============CONTENT PAGES==============END=======================END===========CONTENT PAGES ============END============*/
