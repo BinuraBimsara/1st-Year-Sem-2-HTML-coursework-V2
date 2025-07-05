@@ -106,7 +106,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
 }
 
 footer p {
@@ -127,9 +126,11 @@ footer p {
     text-decoration: none;
     color: white;
 }
+.pageeditors{
+    margin-right: 160px;
+}
 
 /* END==========END==============HOMEPAGE==============END=======================END===========HOMEPAGE============END============*/
-
 
 /* ========================CONTENT PAGES================================================CONTENT PAGES ========================*/
 .custom-navbar2 {
@@ -214,7 +215,7 @@ section p {
 
 /* ========================PAGE EDITORS================================================PAGE EDITORS========================*/
 
-.container {
+.container5 {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1200px;
@@ -251,7 +252,7 @@ aside li {
 }
 
 .student {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.548);
     margin-top: 60px;
     padding: 10px;
     width: 100%;
@@ -279,12 +280,12 @@ aside li {
     /* Adjust font size */
     font-weight: bold;
     /* Make the text stand out */
-    
+   
 }
 
 .top a:hover {
     transition: 0.5s;
-    background-color: #00b30c62;
+    background-color: #00b30c;
     /* Darker shade on hover */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     /* Adds a subtle shadow */

@@ -4,37 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor Student - provide your student name</title>
+    <title>Page Editor Student 1 - Binura Narayana</title>
 
     <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
+    <style>
+        h3 {
+            margin-top: 10px;
+        }
+
+        section ul li {
+            margin-top: 10px;
+        }
+
+        section ul {
+            margin-left: 10px;
+        }
+
+
+        .accessibility,
+        .challenge,
+        .compliance ul li {
+            margin-top: 3px;
+            margin-left: 25px;
+        }
+    </style>
 </head>
-<style>
-    h3 {
-        margin-top: 10px;
-    }
-
-    section ul li {
-        margin-top: 10px;
-    }
-
-    section ul {
-        margin-left: 10px;
-    }
-
-
-    .accessibility,
-    .challenge,
-    .compliance ul li {
-        margin-top: 3px;
-        margin-left: 25px;
-    }
-</style>
 
 <body>
     <nav class="custom-navbar">
@@ -65,80 +64,60 @@
                     <ul>
                         <li>
                             <h4>&lt;!DOCTYPE html&gt;</h4>
-                        </li>
-                        <p>
                             Defines the document type as HTML5 — tells the browser to render the page in
                             standards-compliant
                             mode.
-                        </p>
-
-                        </li>
                         </li>
                         <li>
                             <h4>&lt;link rel="stylesheet"&gt; and &lt;link href="..."&gt;</h4>
-                            <p>
-                                Used to link external resources: one for the Google Fonts (Poppins), and one for an
-                                external
-                                CSS
-                                file.
-                            </p>
+                            Used to link external resources: one for the Google Fonts (Poppins), and one for an
+                            external
+                            CSS
+                            file.
                         </li>
                         <li>
                             <h4>&lt;body&gt;</h4>
-                            <p>
-                                Contains the visible content of the webpage such as headings, paragraphs, and
-                                interactive
-                                elements.
-                            </p>
-
+                            Contains the visible content of the webpage such as headings, paragraphs, and
+                            interactive
+                            elements.
                         </li>
                         <li>
                             <h4>&lt;div class="background"&gt;</h4>
-                            <p>
-                                A full-screen container with a background image and overlay styling. Flexbox is used to
-                                center
-                                content.
-                            </p>
+                            A full-screen container with a background image and overlay styling. Flexbox is used to
+                            center
+                            content.
                         </li>
                         <li>
                             <h4>&lt;table&gt;</h4>
-                            <p>
-                                Used here to vertically align and structure the splash screen’s text and loader.
-                            </p>
+                            Used here to vertically align and structure the splash screen’s text and loader.
                         </li>
                         <li>
                             <h4>&lt;p&gt;</h4>
-                            <p>
-                                Descriptive paragraph explaining the mission. Styling improves readability with
-                                controlled
-                                width and
-                                spacing.
-                            </p>
+                            Descriptive paragraph explaining the mission. Styling improves readability with
+                            controlled
+                            width and
+                            spacing.
                         </li>
                         <li>
                             <h4>&lt;script&gt; window.onload ... &lt;/script&gt;</h4>
-                            <p>
-                                JavaScript code that waits 3 seconds, adds a fade-out effect, and then redirects to
-                                <code>home.html</code>. Provides a timed splash screen.
-                            </p>
+                            JavaScript code that waits 3 seconds, adds a fade-out effect, and then redirects to
+                            <code>home.html</code>. Provides a timed splash screen.
                         </li>
                         <li>
                             <h4>&lt;style&gt; ... &lt;/style&gt;</h4>
-                            <p>
-                                Contains internal CSS to style the layout, text, background, and animations. Key
-                                features
-                                include a
-                                blurred background, flex centering, and an animated ring loader.
-                            </p>
+                            Contains internal CSS to style the layout, text, background, and animations. Key
+                            features
+                            include a
+                            blurred background, flex centering, and an animated ring loader.
                         </li>
                     </ul>
                     <h3>Accessibility</h3>
                     <div class="accessibility">
                         <ul>
-                            <li>Imported google fonts for minimalistic and clear font styles</li>
+                            <li>Imported google fonts for minimalistic and clear font styles.</li>
                             <li>A loader animation is included using CSS (@keyframes ring), and a "Directing..." message
-                                to indicate a loading animation</li>
-                            <li>Used high contrast between text and background for readability</li>
+                                to indicate a loading animation.</li>
+                            <li>Used high contrast between text and background for readability.</li>
                         </ul>
                     </div>
 
@@ -155,67 +134,47 @@
                     <ul>
                         <li>
                             <h4>&lt;div class="cards-container"&gt;</h4>
-                        </li>
-                        <p>
                             A flex container that holds multiple volunteer program cards. Flexbox ensures responsiveness
                             and wrapping of cards on smaller screens.
-                        </p>
+                        </li>
 
                         <li>
                             <h4>&lt;div class="card"&gt;</h4>
-                        </li>
-                        <p>
                             Represents a reusable UI block with an image, title, details, description, and link. Cards
                             help structure and group related content.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>&lt;form&gt; and &lt;textarea&gt;</h4>
-                        </li>
-                        <p>
                             Used for user feedback. The <code>textarea</code> allows multiline input. Forms support
                             interaction and data submission.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>display: flex</h4>
-                        </li>
-                        <p>
                             CSS property used for layout. Applied to containers like <code>.cards-container</code> and
-                            <code>.reviews</code> to align content in a straight line.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>object-fit: cover</h4>
-                        </li>
-                        <p>
                             Ensures images fill their container without distortion by cropping excess parts. Maintains a
                             clean layout for card images.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>transition: transform 0.3s</h4>
-                        </li>
-                        <p>
                             Adds smooth hover animations for cards, improving user interaction by subtly raising cards
                             when hovered.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>border-radius</h4>
-                        </li>
-                        <p>
                             Rounds corners of elements like cards, buttons, and input fields to create a softer, modern
                             design.
-                        </p>
+                        </li>
                     </ul>
                     <h3>Accessibility</h3>
                     <div class="accessibility">
 
                         <ul>
-                            <li>Added images to help screen readers to understand the visual content</li>
-                            <li>Used transtitions and animations to make the user expireince more interactive</li>
-                            <li>Used buttons for users to navigate to external webpages</li>
+                            <li>Added images to help screen readers to understand the visual content.</li>
+                            <li>Used transtitions and animations to make the user expireince more interactive.</li>
+                            <li>Used buttons for users to navigate to external webpages.</li>
                         </ul>
                     </div>
 
@@ -233,73 +192,52 @@
                     <ul>
                         <li>
                             <h4>&lt;div class="contentpages"&gt;</h4>
-                        </li>
-                        <p>
                             A wrapper that contains all the page content. Helps in grouping and layout management.
-                        </p>
 
+                        </li>
                         <li>
                             <h4>&lt;div class="main2"&gt;</h4>
-                        </li>
-                        <p>
                             Container for the main section of the page that holds the heading and action cards.
-                        </p>
 
+                        </li>
                         <li>
                             <h4>&lt;div class="cards-wrapper"&gt;</h4>
-                        </li>
-                        <p>
                             Holds all the individual action cards in a responsive layout.
-                        </p>
 
+                        </li>
                         <li>
                             <h4>&lt;div class="action-card"&gt;</h4>
-                        </li>
-                        <p>
                             Represents a single card that lists ways to take action against climate change.
-                        </p>
 
+                        </li>
                         <li>
                             <h4>.main2 { padding: 50px 20px; }</h4>
-                        </li>
-                        <p>
                             Adds space around the main content to prevent it from touching the browser edges.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>.cards-wrapper { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
                             </h4>
-                        </li>
-                        <p>
                             Uses Flexbox to layout cards in a responsive, multi-row format with equal spacing.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>.action-card { background-color: rgba(255,255,255,0.4); backdrop-filter: blur(8px);
                                 border-radius: 30px; }</h4>
-                        </li>
-                        <p>
                             Gives each card a glassmorphic, modern UI effect with rounded corners and semi-transparent
                             background.
-                        </p>
-
+                        </li>
                         <li>
                             <h4>.action-card:hover { transform: translateY(-5px); }</h4>
-                        </li>
-                        <p>
                             Adds an animation on hover to lift the card slightly, making it more interactive.
-                        </p>
-                        Controls spacing between footer lines to make the text easier to read.
-                        </p>
-                    </ul>
+                            Controls spacing between footer lines to make the text easier to read.
+                        </li>
                     </ul>
 
                     <h3>Accessibility</h3>
                     <div class="accessibility">
 
                         <ul>
-                            <li>Used a card for each action for and points to avoid lengthy descriptions.</li>
-                            <li>Backdrop filter is used to have a modern eyecatching style.</li>
+                            <li>Used a card for each action, used points to avoid lengthy descriptions.</li>
+                            <li> Used a backdrop blur filter to have a modern eyecatching style.</li>
                         </ul>
                     </div>
 
@@ -325,7 +263,7 @@
                     <h2 id="compliance"> Compliance</h2>
                     <div class="compliance">
                         <ul>
-                            <li>Does not promote illegal, offennsive or discriminatory content</li>
+                            <li>Does not promote illegal, offennsive or discriminatory content.</li>
                             <li>The content is educational, factual, and respectful, promoting awareness on climate
                                 change — a socially responsible topic.</li>
                             <li>None of the above pages collect personal data. </li>
@@ -335,8 +273,6 @@
                 </section>
                 <section>
                     <h2 id="ref">References</h2>
-                    <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a
-                        simplified style). For example:<br><br>
                     <ul class="ref">
                         <li>United Nations (n.d.) <i>Goal 13: Take urgent action to combat climate change and its
                                 impacts</i>. Available at: <a
@@ -351,6 +287,9 @@
                                 href="https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png">https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png</a>
                             (Accessed: 5 July 2025).</li>
 
+                        <li>Flaticon. (n.d.). <i>Smiley face icon [online image]</i>. Available at: <a
+                                href="https://cdn-icons-png.flaticon.com/128/10735/10735495.png">https://cdn-icons-png.flaticon.com/128/10735/10735495.png</a>
+                            (Accessed 5 July 2025)</li>
                     </ul>
                 </section>
 
@@ -368,30 +307,6 @@
                         <li><a href="#splash">Splash page</a></li>
                         <li><a href="#volunteer">Volunteer page</a></li>
                         <li><a href="#content">Content page</a></li>
-                    </ul>
-                    <li>
-                        <h3>Student 2</h3>
-                    </li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                    <li>
-                        <h3>Student 3</h3>
-                    </li>
-                    <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                    <li>
-                        <h3>Student 4</h3>
-                    </li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
                     </ul>
                     <li><a href="#challenge">
                             <h3>Challenges and Lessons Learned</h3>

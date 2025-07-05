@@ -12,138 +12,126 @@
         rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
 
+    <style>
+        .background {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.912);
+        }
+
+        .background::before {
+            content: ' ';
+            background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            filter: blur(2px);
+
+        }
+
+        table {
+            text-align: center;
+            margin: 5%;
+            margin-top: 1px;
+        }
+
+        .heading {
+            line-height: 1;
+            letter-spacing: -2px;
+            font-weight: 600;
+            font-size: 120px;
+            font-family: Poppins;
+            color: white;
+        }
+
+        p {
+            max-width: 1000px;
+            margin: 10px auto 30px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            font-weight: normal;
+        }
+
+        .members {
+            margin-top: 5px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .center {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 25vh;
+        }
+
+        .ring {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: ring 2s linear infinite;
+        }
+
+        @keyframes ring {
+            0% {
+                transform: rotate(0deg);
+                box-shadow: 1px 5px 2px #60e600;
+            }
+
+            50% {
+                transform: rotate(180deg);
+                box-shadow: 1px 5px 2px #18b7ff;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                box-shadow: 1px 5px 2px #13e600;
+            }
+        }
+
+        .ring::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+        }
+
+        span {
+            color: #737373;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200px;
+            animation: text 3s ease-in-out;
+        }
+    </style>
 </head>
-
-<style>
-    .background {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.912);
-    }
-
-    .background::before {
-        content: ' ';
-        background-image: url("https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.2;
-        filter: blur(2px);
-
-    }
-
-    table {
-        text-align: center;
-        margin: 5%;
-        margin-top: 1px;
-    }
-
-    h {
-        line-height: 1;
-        letter-spacing: -2px;
-        font-weight: 600;
-        font-size: 120px;
-        font-family: Poppins;
-        color: white;
-    }
-
-    p {
-        max-width: 1000px;
-        margin: 10px auto 30px;
-        font-size: 18px;
-        line-height: 1.6;
-        color: white;
-        font-weight: normal;
-    }
-
-    .members {
-        margin-top: 5px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: white;
-    }
-
-    .center {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        min-height: 25vh;
-    }
-
-    .ring {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        animation: ring 2s linear infinite;
-    }
-
-    @keyframes ring {
-        0% {
-            transform: rotate(0deg);
-            box-shadow: 1px 5px 2px #60e600;
-        }
-
-        50% {
-            transform: rotate(180deg);
-            box-shadow: 1px 5px 2px #18b7ff;
-        }
-
-        100% {
-            transform: rotate(360deg);
-            box-shadow: 1px 5px 2px #13e600;
-        }
-    }
-
-    .ring::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        box-shadow: 0 0 5px rgba(255, 255, 255, .3);
-    }
-
-    span {
-        color: #737373;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        line-height: 200px;
-        animation: text 3s ease-in-out linear;
-    }
-</style>
-
-<script>
-    window.onload = function () {
-        setTimeout(function () {
-            document.body.classList.add("fade-out");
-            setTimeout(function () {
-                window.location.href = "home.html";
-            }, 1000);
-        }, 3000); 
-    };
-</script>
 
 <body>
     <div class="background">
         <table>
             <tr>
                 <td>
-                    <h>CLIMATE CHANGE</h>
+                    <div class="heading">CLIMATE CHANGE</div>
                 </td>
             </tr>
             <tr>
@@ -174,8 +162,16 @@
             </tr>
         </table>
     </div>
-
-
+    <script>
+    window.onload = function () {
+        setTimeout(function () {
+            document.body.classList.add("fade-out");
+            setTimeout(function () {
+                window.location.href = "home.html";
+            }, 1000);
+        }, 3000);
+    };
+</script>
 </body>
 
 </html>
