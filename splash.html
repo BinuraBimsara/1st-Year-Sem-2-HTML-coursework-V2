@@ -163,15 +163,15 @@
         </table>
     </div>
     <script>
-    window.onload = function () {
-        setTimeout(function () {
-            document.body.classList.add("fade-out");
+        window.onload = function () {
             setTimeout(function () {
-                window.location.href = "home.html";
-            }, 1000);
-        }, 3000);
-    };
-</script>
+                document.body.classList.add("fade-out");
+                setTimeout(function () {
+                    window.location.href = "home.html";
+                }, 1000);
+            }, 3000);
+        };
+    </script>
 </body>
 
 </html>

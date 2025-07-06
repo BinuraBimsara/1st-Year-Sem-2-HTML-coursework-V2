@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - R.D.V. Devnak</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    h3 {
+        margin-top: 10px;
+    }
+
+    section ul li {
+        margin-top: 10px;
+    }
+
+    .accessibility ul li {
+        margin-top: 3px;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+
+
+    <nav class="custom-navbar">
+        <a href="home.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"
+                alt="Home"> Home</a>
+
+
+        <div class="nav-links" id="navLinks">
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="profile.html">User Profile</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <div class="background2">
+        <div class="student">
+            <h2>R.D.V. Devnak, Student 4</h2>
+        </div>
+        <div class="container5">
+            <!-- Main content area -->
+            <main>
+                <section>
+                    <h2 id="spalsh">User Profile</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                    <ul>
+                        <li><b><code>&lt;div&gt;</code></b>: Main structural blocks used to group content logically
+                            (e.g., left-section, right-section).</li>
+                        <li><b><code>&lt;nav&gt;</code></b>: For the navigation bar at the top linking to different
+                            pages.</li>
+                        <li><b><code>&lt;footer&gt;</code></b>: For consistent footer information.</li>
+                        <li>
+                            <b><code>&lt;form&gt;</code></b>,
+                            <b><code>&lt;input&gt;</code></b>,
+                            <b><code>&lt;textarea&gt;</code></b>,
+                            <b><code>&lt;button&gt;</code></b>: Used in the contact section for collecting user
+                            feedback.
+                        </li>
+                        <li><b><code>&lt;ul&gt;</code></b> and <b><code>&lt;li&gt;</code></b>: To list user details and
+                            goals in a semantic, accessible way.</li>
+                        <li><b><code>&lt;img&gt;</code></b>: To render the profile image with circular styling using
+                            <b><code>border-radius</code></b>.
+                        </li>
+                    </ul>
+
+
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>
+                    <ul>
+                        <li>Semantic HTML elements (<b><code>&lt;nav&gt;</code></b>, <b><code>&lt;footer&gt;</code></b>,
+                            <b><code>&lt;ul&gt;</code></b>) for screen reader compatibility.
+                        </li>
+                        <li>Clear structure and headings (<b><code>&lt;h2&gt;</code></b>, <b><code>&lt;p&gt;</code></b>)
+                            for navigability.</li>
+                        <li>Form input fields include <b><code>placeholder</code></b> and <b><code>required</code></b>
+                            attributes.</li>
+                        <li>Alt attribute in <b><code>&lt;img&gt;</code></b> ensures the image is accessible to visually
+                            impaired users.</li>
+                    </ul>
+
+                    </p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation.ST4.html#splashVal">Click here</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                    <p><a href="profile.html">Click here.</a></p>
+                </section>
+
+                <section>
+                    <h2 id="volunteer">Sitemap</h2>
+                    <h3>Technical Description</h3>
+                    <p>This is a web page that is built in HTML and CSS and the result is a visual sitemap of the site.
+                        Semantic markup of the page include <b>&lt;nav&gt;</b> element to describe navigation,
+                        <b>&lt;footer&gt;</b>
+                        element to describe footer content and linking to other pages is done using <b>&lt;a&gt;</b>
+                        element.
+                        The primary sitemap chart is also presented in the form of SVG lines that interrelate various
+                        nodes representing the pages and depicting the hierarchy of pages.</p><br>
+
+                    <p>Its design is based on Flexbox positioning. The .wrapper and .container classes are implemented
+                        with Flexbox to centerize content and form three content columns to compose the pages. The style
+                        of each page node is given using the .node class which is an orange background (rgba(255, 165,
+                        0, 0.85)) and contains pad, rounded corner (border-radius) and shadow (box-shadow) as well as
+                        has scaled hover effect (transform: scale(1.05) and transition).</p><br>
+
+                    <p><b>Important CSS properties applied:</b></p>
+                    <ul>
+                        <li>flexible display: flex.</li>
+                        <li>space between item gap.</li>
+                        <li>position: relative and absolute to layer the SVG lines behind nodes.</li>
+                        <li>Notice: pointer-events: none on the SVG to stop user interaction.</li>
+                    </ul>
+                    <p>
+                        <li>To have an excellent modern font, Google Fonts (Poppins) is imported.
+                    </p>
+                    </li>
+                    <p>
+                        </li>When the SVG <b>&lt;line&gt;</b> elements have stroke-dasharray, they produce dashed lines
+                        between the
+                        nodes.</p>
+                    </li><br>
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li>Using semantic tags <b>(&lt;nav&gt;, &lt;footer&gt;, &lt;a&gt;)</b> for assistive technologies.
+                        <li>Ensuring that navigation links have descriptive text and emojis to enhance understanding.</li>
+                        <li>Maintaining a clear visual hierarchy with consistent heading structure and readable fonts.</li>
+                        <li>Ensuring good color contrast between nodes and background for readability.</li>
+                    </ul>
+                    
+
+                    <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation.ST4.html#volunteerVal">Click here.</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="sitemap.html">Click here.</a></p>
+                </section>
+
+                <section>
+                    <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3><br>
+                    <h4>1. HTML Structure:</h4><br>
+                    <li>The structure is enclosed within the <b>&lt;main&gt;</b> tag that has a semantic value of
+                        defining the main
+                        content of the page. This enhances the search engine optimization and compatibility with screen
+                        readers.</li><br>
+                    <li>All personal topics (should be single such as Greenhouse Gas Emissions, Rising Temperatures) are
+                        aggregated with the use of <b>&lt;section&gt;</b> tags, which add a more documents structuring
+                        as well as
+                        modularity to the contents.</li><br>
+                    <li>Titles will be formatted in terms of using <b>&lt;h1&gt;</b> and <b>&lt;h2&gt;</b> tags to
+                        maintain a correct
+                        hierarchy of the headings.</li><br>
+                    <li>The description of all cause and effects is explained with <b>&lt;p&gt;</b> (paragraphs) or
+                        <b>&lt;ul&gt;</b>
+                        lists to enhance readability and semantics.
+                    </li><br><br>
+
+                    <h4>2. CSSs usage:</h4><br>
+
+                    <li>Google Fonts (Poppins) were used to import fonts so that the whole thing would appear clean and
+                        professional.</li><br>
+                    <li>It is already out-of-the-box responsive to mobile devices since the grid system places the
+                        layout, though only a few custom classes of the grid have been utilised in this case.</li><br>
+                    <li>Margin top and padding classes are also used to give physical space between the sections, which
+                        facilitates UX and makes content visible at a glance.</li><br><br>
+
+                    <h4>3. Navigation:</h4><br>
+                    <li>The navigation bar is made through the means of a <b>&lt;nav&gt;</b> tag with the core of the
+                        anchor tags
+                        that have the references to the other pages (Home, Volunteer, Team, etc.).</li><br>
+                    <li>A special class custom-navbar2 may be stylish by oneself through the use of external stylesheet
+                        (style.css).</li><br><br>
+
+                    <h4>4. Footer:</h4><br>
+                    <li>At the bottom of the page where we want to keep consistent branding and credit information we
+                        have a
+                        <b>&lt;footer&gt;</b> tag. This promises to make legal as well as contributor information
+                        visible
+                        throughout the site.
+                    </li><br>
+
+
+                    <h3>Accessibility</h3>
+                    <ul>
+                        <li>
+                            <p>Use of Semantic HTML</p>
+                        </li>
+                        <li>
+                            <p>Color and Typography</p>
+                        </li>
+                        <li>
+                            <p>Screen Reader Compatibility</p>
+                        </li>
+                        <li>
+                            <p>Responsiveness</p>
+                        </li>
+                    </ul>
+
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation.ST4.html#contentVal">Click here.</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST4.html">Click here.</a></p>
+                </section>
+
+                <section>
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <ul>
+                        <li>Optimizing images so the page loads quickly.</li>
+                        <li>Making sure text is readable with good font size and color contrast.</li>
+                        <li>Ensuring buttons and links are working.</li>
+                        <li>Aligning images and text properly within the layout.</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2 id="compliance"> Compliance</h2>
+                    <ul>
+                        <li>The pages follow accessibility guidelines, including alt text for images and proper HTML
+                            structure.</li>
+                        <li>The design is mobile-friendly with responsive layout and viewport settings.</li>
+                        <li>No sensitive personal data is collected from users.</li>
+                        <li>The pages use HTTPS for secure form submission.</li>
+                        <li>The content is appropriate, educational, and promotes climate awareness.</li>
+                        <li>The website does not contain harmful or invasive code.</li>
+                    </ul>
+
+
+
+                </section>
+                <section>
+                    <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>United Nations (n.d.) <i>Goal 13: Take urgent action to combat climate change and its
+                                impacts</i>. Available at: <a
+                                href="https://globalgoals.org/goals/13-climate-action/">https://globalgoals.org/goals/13-climate-action/</a>
+                            (Accessed: 5 July 2025).</li>
+
+                        <li>Hartono Creative Studio (n.d.) <i>[Blurred city background image]</i>. Available at: <a
+                                href="https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png">https://www.bdp-verband.de/fileadmin/_processed_/3/f/csm_hartono-creative-studio-ziJaACfCjc8-unsplash_8995c15b57.png</a>
+                            (Accessed: 5 July 2025).</li>
+                    </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+                <ul class="top-level-ul">
+                    <li>
+                        <h3>Student 4</h3>
+                    </li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                    <li><a href="#challenge">
+                            <h3>Challenges and Lessons Learned</h3>
+                        </a></li>
+                    <li><a href="#compliance">
+                            <h3>Compliance</h3>
+                        </a></li>
+                    <li><a href="#ref">
+                            <h3>References</h3>
+                        </a></li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            <p>2025 Climate Awareness Initiative.</p>
+            <div class="pageeditors">
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Page Editor ST1</a></li>
+                    <li><a href="pageEditor_ST2html">Page Editor ST2</a></li>
+                    <li><a href="pageEditor_ST3.html">Page Editor ST3</a></li>
+                    <li><a href="pageEditor_ST4.html">Page Editor ST4</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>
