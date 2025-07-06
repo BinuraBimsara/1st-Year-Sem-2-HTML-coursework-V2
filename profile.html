@@ -149,11 +149,7 @@
         color: white;
     }
 
-    .interests {
-        background-color: #ffbc03;
-        color: white;
-        text-align: center;
-    }
+
 
     .contact input,
     .contact textarea {
@@ -198,6 +194,24 @@
     .reset button:hover {
         background: #2dff03;
     }
+
+/* UN Goals & Interests Section */
+    .interests {
+        background-color: rgba(0, 0, 0, 0.577);
+        color: white;
+        text-align: center;
+    }
+
+    .goals img {
+        width: 60px;
+        margin: 10px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .goals img:hover {
+        transform: scale(1.1);
+    }
 </style>
 
 <body>
@@ -220,26 +234,25 @@
         <div class="container1">
             <div class="container2" id="content">
                 <div class="left-section">
-                    <img src="Imgs/img.jpg" alt="Profile Picture">
-                    <p class="quote">"If there's a hole, there's a goal."</p>
+                    <img src="Imgs/profilepic.png" alt="Profile Picture">
+                    <p class="quote">"First, solve the problem. Then, write the code"</p>
                     <div class="info">
-                        <p><strong>Name:</strong> Binura Narayana</p>
-                        <p><strong>Email:</strong> mommy@gmail.com</p>
+                        <p><strong>Name:</strong> Ethan Brooks</p>
+                        <p><strong>Email:</strong> ethanbrooks@gmail.com</p>
                         <ul>
-                            <li><strong>Age:- </strong> 24</li>
+                            <li><strong>Age:- </strong> 25</li>
                             <li><strong>Work:- </strong> Software Engineering Student</li>
                             <li><strong>Family:- </strong> Single</li>
-                            <li><strong>Location:- </strong> Australia</li>
+                            <li><strong>Location:- </strong> New Zealand</li>
                         </ul>
                     </div>
                     <h3>Skills</h3>
                     <div class="skills">
                         <p>Programming <span class="bar"><span style="width: 80%;"></span></span></p>
-                        <p>Web Development <span class="bar"><span style="width: 75%;"></span></span></p>
+                        <p>Web Development & Design <span class="bar"><span style="width: 75%;"></span></span></p>
                         <p>Cloud Computing <span class="bar"><span style="width: 60%;"></span></span></p>
                         <p>Debugging & Problem Solving <span class="bar"><span style="width: 70%;"></span></span></p>
-                        <p>Software Architecture & Design Patterns <span class="bar"><span
-                                    style="width: 80%;"></span></span>
+                        <p>Software Designing <span class="bar"><span style="width: 80%;"></span></span>
                         </p>
                     </div>
                 </div>
@@ -247,44 +260,68 @@
                 <div class="right-section">
                     <div class="box">
                         <h2>About Me</h2>
-                        <p>Binura Narayana is a passionate Software Engineering student who specializes in designing
-                            and developing robust, scalable applications. With a strong foundation in algorithms, data
-                            structures,
-                            and software architecture, she enjoys solving complex problems through efficient coding.
-                            Dexter
-                            actively
-                            contributes to open-source projects, participates in hackathons, and stays updated on the
-                            latest
-                            advancements in
-                            artificial intelligence and cloud computing. She aspires to work in a leading tech company,
-                            developing cutting-edge
-                            software solutions.</p>
+                        <p>Ethan Brooks is a Software Engineering student who loves building strong, reliable apps. He
+                            has a good understanding of how code works, especially with algorithms, data structures, and
+                            system design. Ethan enjoys solving tricky problems with smart coding. He also takes part
+                            in open-source projects, joins hackathons, and keeps up with new trends in AI and cloud
+                            computing. His dream is to work at a top tech company and help create useful, cutting-edge
+                            software.
+                        </p>
+
                     </div>
+
                     <div class="box">
                         <h2>Goals</h2>
                         <ul>
-                            <li>Gain expertise in full-stack software development</li>
-                            <li>Build and deploy scalable applications using cloud platforms</li>
+                            <li>Master data structures and algorithms to perform well in coding interviews</li>
+                            <li>Dive into responsive design using advanced CSS and media queries</li>
                             <li>Secure a software engineering internship at a top tech company</li>
-                            <li>Contribute to open-source projects and collaborate with the developer community</li>
+                            <li>Obtain certifications in cloud services (e.g., AWS, Azure, GCP) to boost technical
+                                credibility</li>
                         </ul>
                     </div>
                     <div class="box">
+                        <h2>Frustrations</h2>
+                        <ul>
+                            <li>
+                                <p>Spending hours debugging, only to realize it was a missing semicolon</p>
+                            </li>
+                            <li>
+                                <p>Fixing one bug and unintentionally creating three more</p>
+                            </li>
+                            <li>
+                                <p>Balancing university coursework with personal projects and internships</p>
+                            </li>
+                            <li>
+                                <p>Styling a form in CSS that looks perfect in Chrome but broken in Firefox</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
                         <h2>Experience</h2>
                         <p><b>Brief Description:</b></p>
-                        <p>Dexter has hands-on experience in software development, cloud computing, and UI/UX design.
-                        </p>
+                        <p>Ethan has practical experience in full-stack web development, Java programming, and UI prototyping.</p>
                         <ul>
-                            <li>Developed a <b>task management web application</b> using <b>React.js, Node.js, and
-                                    MongoDB</b>
-                            </li>
-                            <li>Built an <b>AI-powered chatbot</b> that assists students with academic queries</li>
-                            <li>Worked on a <b>cloud-based file storage system</b> as part of a university project</li>
+                            <li>Developed a responsive portfolio website using HTML, CSS, and JavaScript</li>
+                            <li>Built a Java-based number pattern generator using nested loops and arrays</li>
+                            <li>Designed a hierarchical site map with embedded CSS and SVG connectors</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
+            
+            <!-- UN Goals & Interests Section -->
+            <div class="box2 interests">
+                <h2>UN Goals I Support</h2>
+                <div class="goals">
+                    <img src="un goals i support\sustainablecities.png" alt="Sustainable Cities and Communities">
+                    <img src="un goals i support\goodhealth.png" alt="Good Health and Well-being">
+                    <img src="un goals i support\peace.jpg" alt="Zero Hunger">
+                    <img src="un goals i support\lifebelowwater.png" alt="Life Below Water">
+                    
+                </div>
+            </div>
             <div class="box2">
                 <h2>Volunteering Availability</h2>
                 <table class="availability-table">
@@ -295,17 +332,17 @@
                     </tr>
                     <tr>
                         <td>Monday</td>
-                        <td>10 AM - 2 PM</td>
-                        <td>Community Work</td>
+                        <td>1 AM - 5 PM</td>
+                        <td>Family Work</td>
                     </tr>
                     <tr>
-                        <td>Wednesday</td>
-                        <td>3 PM - 6 PM</td>
+                        <td>Thursday</td>
+                        <td>1 PM - 4 PM</td>
                         <td>Environmental Cleanup</td>
                     </tr>
                     <tr>
-                        <td>Friday</td>
-                        <td>12 PM - 4 PM</td>
+                        <td>Sunday</td>
+                        <td>4 PM - 6 PM</td>
                         <td>Teaching Kids</td>
                     </tr>
                 </table>
@@ -328,7 +365,7 @@
         <div class="pageeditors">
             <ul>
                 <li><a href="pageEditor_ST1.html">Page Editor ST1</a></li>
-                <li><a href="pageEditor_ST2html">Page Editor ST2</a></li>
+                <li><a href="pageEditor_ST2.html">Page Editor ST2</a></li>
                 <li><a href="pageEditor_ST3.html">Page Editor ST3</a></li>
                 <li><a href="pageEditor_ST4.html">Page Editor ST4</a></li>
             </ul>

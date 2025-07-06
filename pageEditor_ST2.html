@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Onila Saslaka</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    h3 {
+        margin-top: 10px;
+    }
+
+    section ul li {
+        margin-top: 10px;
+    }
+
+    .accessibility ul li {
+        margin-top: 3px;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+    <nav class="custom-navbar">
+        <a href="home.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/128/10735/10735495.png"
+                alt="Home">
+            Home</a>
+        <div class="nav-links" id="navLinks">
+            <a href="volunteer.html">Volunteer</a>
+            <a href="table.html">Table</a>
+            <a href="profile.html">User Profile</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="team.html">Team</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <div class="background2">
+        <div class="student">
+            <h2>P.W.O.S. Wedikkara, Student 2</h2>
+        </div>
+        <div class="container5">
+            <main>
+                <section>
+                    <h2 id="home">Home Page</h2>
+                    <h3>Technical Description</h3>
+                    <ul>
+                        <li>
+                            <h4>&lt;div class="text-container"&gt;</h4>
+                            Used to structure the hero section with a two-column layout: an image on the left and a
+                            headline +
+                            paragraph on the right. Flexbox ensures content is aligned side by side and stays
+                            responsive.
+                        </li>
+                        <li>
+                            <h4>&lt;div class="cards-container"&gt;</h4>
+                            A flex wrapper that holds four content cards. It uses <code>flex-wrap</code> and
+                            <code>gap</code> to
+                            manage spacing and allow responsive stacking on smaller screens.
+                        </li>
+                        <li>
+                            <h4>&lt;div class="card"&gt;</h4>
+                            Each card contains an image, a title, and a "Learn more" link. It’s styled with
+                            <code>border-radius</code>, <code>background color</code> (dark transparency), and a hover
+                            effect using
+                            <code>transform: translateY(-8px)</code> for smooth animation.
+                        </li>
+                        <li>
+                            <h4>&lt;nav class="custom-navbar"&gt;</h4>
+                            A consistent horizontal navigation bar with links to other major site pages. Flexbox is used
+                            here too for
+                            alignment.
+                        </li>
+                        <li>
+                            <h4>Google Fonts &amp; External CSS</h4>
+                            The page imports the 'Poppins' font for a modern and clean aesthetic. External stylesheets
+                            are linked for
+                            consistent branding.
+                        </li>
+                        <li>
+                            <h4>Image Optimization</h4>
+                            All images inside cards use <code>object-fit: cover</code> to fill their space without
+                            distortion and
+                            maintain visual balance.
+                        </li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <div class="accessibility">
+                        <ul>
+                            <li>Each image uses <code>alt</code> attributes to describe content for screen readers.</li>
+                            <li>Font contrast (white on dark) supports readability for low-vision users.</li>
+                            <li>Navigation links are simple, clearly labeled, and use readable font sizes.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Link to the validation page</h3>
+                    <p><a href="validation_ST2.html#homeVal">Click here</a></p>
+
+                    <h3>Link to the page</h3>
+                    <p><a href="home.html">Click here</a></p>
+                </section>
+
+                <section>
+                    <h2 id="table">Table Page</h2>
+                    <h3>Technical Description</h3>
+                    <ul>
+                        <li>
+                            <h4>&lt;div class="pricing table"&gt;</h4>
+                            A custom-designed table using CSS Grid to display SDG 13 renewable energy actions by
+                            continent. Unlike
+                            normal
+                            <code>&lt;table&gt;</code> tags, this gives full control over layout and responsiveness.
+                        </li>
+                        <li>
+                            <h4>grid template columns: repeat(5, 1fr)</h4>
+                            Creates a five-column layout with equal width, useful for aligning each column like a table
+                            (Region,
+                            Solar, Wind, etc.).
+                        </li>
+                        <li>
+                            <h4>&lt;div class="cell"&gt;</h4>
+                            Each grid cell contains data, styled with padding, transparency, and colored borders for
+                            visibility.
+                        </li>
+                        <li>
+                            <h4>✔ and ✘ Icons</h4>
+                            Used instead of text for accessibility and clean visual feedback. Styled with separate
+                            <code>.tick</code>
+                            and
+                            <code>.cross</code> classes for color coding.
+                        </li>
+                        <li>
+                            <h4>&lt;a href="..."&gt;</h4>
+                            Each row ends with a hyperlink styled as a button leading to external regional climate data
+                            pages. Opens
+                            in a new tab with <code>target="_blank"</code>.
+                        </li>
+                        <li>
+                            <h4>Responsive Container</h4>
+                            The full table is wrapped in a <code>&lt;div class="container"&gt;</code> with max width and
+                            padding to
+                            keep layout clean on all devices.
+                        </li>
+                        <li>
+                            <h4>Bootstrap CDN</h4>
+                            Bootstrap 5 is linked via CDN but used minimallyprimarily kept for optional responsiveness
+                            and
+                            compatibility.
+                        </li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <div class="accessibility">
+                        <ul>
+                            <li>High-contrast design ensures readability (white on green/red backgrounds).</li>
+                            <li>Symbols (✔, ✘) support quick visual scanning for users with cognitive differences.</li>
+                            <li>Table layout adapts to mobile and desktop due to CSS Grid and container width controls.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3>Link to the validation page</h3>
+                    <p><a href="validation_ST2.html#tableVal">Click here</a></p>
+
+                    <h3>Link to the page</h3>
+                    <p><a href="table.html">Click here</a></p>
+                </section>
+
+
+                <section>
+                    <h2 id="content">Content Page: What is Climate Change?</h2>
+                    <h3>Technical Description</h3>
+                    <ul>
+                        <li>
+                            <h4>&lt;main&gt;</h4>
+                            The main content area holds six well structured sections using semantic HTML. It explains
+                            climate change
+                            through a mix of headings, lists, and paragraphs.
+                        </li>
+                        <li>
+                            <h4>&lt;section&gt;</h4>
+                            Each section is dedicated to a specific sub topic (definition, effects, science, etc.),
+                            improving
+                            readability and semantic structure.
+                        </li>
+                        <li>
+                            <h4>&lt;ul&gt; and &lt;li&gt;</h4>
+                            Unordered lists are used to break down information into bite-sized points. This improves
+                            user
+                            comprehension and screen reader accessibility.
+                        </li>
+                        <li>
+                            <h4>&lt;h2&gt; and &lt;h4&gt;</h4>
+                            Used to logically organize the page hierarchy. The large <code>&lt;h1&gt;</code> grabs
+                            attention at the
+                            top, while <code>&lt;h2&gt;</code> and <code>&lt;h4&gt;</code> help categorize the
+                            information clearly.
+                        </li>
+                        <li>
+                            <h4>&lt;link&gt; (Google Fonts)</h4>
+                            Adds Poppins font to give a modern, clean look across all textual elements, improving the
+                            reading
+                            experience.
+                        </li>
+                        <li>
+                            <h4>Custom CSS Classes</h4>
+                            Classes like <code>.contentpages</code> and <code>.custom-navbar2</code> maintain layout
+                            consistency with
+                            the rest of the site. Colors and spacing match the SDG climate theme.
+                        </li>
+                        <li>
+                            <h4>Bootstrap Integration</h4>
+                            Bootstrap 5 is included via CDN but is only lightly used (e.g. <code>.container</code>,
+                            <code>.text-center</code>, and <code>.mb-5</code>) to support mobile friendly and centered
+                            layout.
+                        </li>
+                    </ul>
+
+                    <h3>Accessibility</h3>
+                    <div class="accessibility">
+                        <ul>
+                            <li>Uses semantic tags like <code>&lt;section&gt;</code> and <code>&lt;h2&gt;</code> for
+                                screen reader
+                                support.</li>
+                            <li>Structured information in list format for better readability and focus.</li>
+                            <li>Readable contrast between text and background using simple black on white sections.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Link to the validation page</h3>
+                    <p><a href="validation_ST2.html#contentVal">Click here</a></p>
+
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST2.html">Click here</a></p>
+                </section>
+
+
+                <section id="challenges">
+                    <h2>Issues and Lessons</h2>
+                    <br>
+                    <p>
+                        <strong>Making Sure of Responsive Design</strong><br>
+                        Responsive design on the part of the site incorporating the multiple screen sizes was one of the
+                        crucial
+                        problems. This called on the judicious application of the CSS Flexbox and Grid systems. In the
+                        process, they
+                        got to discover the effective way in which responsive units and media queries can be used
+                        (Duckett, 2011).
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Consistency in the Design</strong><br>
+                        It was also hard to keep the fonts, buttons and card layouts similar on various pages,
+                        particularly when
+                        coding was done manually. The answer was to reuse CSS classes and design system with external
+                        styles
+                        (Marcotte, 2014).
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Accessibility Implementation</strong><br>
+                        It was essential to make the site compatible to everyone including screen readers. This was
+                        achieved through
+                        semantic HTML, alternate text on images and brush color contrast (W3C, 2024). This experience
+                        led to the
+                        lesson of inclusive practices in designing.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>InternalBits of Navigation and Site Problems</strong><br>
+                        Broken links happened in the earlier phases due to the improper file paths and navigation menus
+                        that were
+                        not unified. Such problems were addressed by verifying all of the relative paths and testing
+                        each page
+                        individually (Nixon, 2013).
+                    </p>
+                    <br>
+                    <p>
+                        <strong>The work of Art and Performance Aesthetic Balance</strong><br>
+                        The use of quality images even increased page loading speeds. The lesson I took away was to
+                        optimize images
+                        by compressing them, and also using object-fit and the lazy-loading skills (Freeman, 2020).
+                    </p>
+                </section>
+
+
+                </p>
+                </section>
+
+                <section id="compliance">
+                    <h2>Compliance</h2>
+                    <br>
+                    <p>
+                        The web content conforms to academic and institutional requirements very strictly. It does not
+                        comprise
+                        offensive, illegal,
+                        or bias-based content. Rather, it is aimed at informing about the climate change, which all is
+                        socially.
+                        responsible values.
+                    </p>
+                    <br>
+                    <p>
+                        The pages do not collect user data, so they are ethical since it guarantees privacy. The code
+                        utilized is
+                        all clean.
+                        It is non-invasive, and it is developed with encrypted HTML, CSS and JavaScript and does not
+                        have trackers
+                        or third party exploitative plugins.
+                    </p>
+                    <br>
+                    <p>
+                        All external sources are reliable and refer to UN, education organizations, and open-source
+                        hosting.
+                    </p>
+                </section>
+
+
+                <section id="ref">
+                    <h2>References</h2>
+                    <ul class="ref">
+                        <li>
+                            Flaticon (n.d.) <i>“Smiley Face Icon”</i> [icon]. Available at:
+                            <a href="https://cdn-icons-png.flaticon.com/128/10735/10735495.png" target="_blank">
+                                https://cdn-icons-png.flaticon.com/128/10735/10735495.png
+                            </a> (Accessed: 6 July 2025).
+                        </li>
+
+                        <li>
+                            Google Images (n.d.) <i>“Climate awareness card image”</i> [image]. Available at:
+                            <a href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDAKMs3gse2tLR8RqwPVYriNIMZVXqgzGii7SjoPqM26jvC2I4"
+                                target="_blank">
+                                https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDAKMs3gse2tLR8RqwPVYriNIMZVXqgzGii7SjoPqM26jvC2I4
+                            </a> (Accessed: 6 July 2025).
+                        </li>
+
+                        <li>
+                            Burnett, H.S. (2023) <i>“Climate Change Weekly #481: Droughts, Hurricanes, Wildfires Aren’t
+                                Living Up to
+                                Alarmists’ Expectations.”</i>
+                            <em>Heartland Daily News</em>, 1 September. Available at:
+                            <a href="https://heartlanddailynews.com/wp-content/uploads/2023/09/droughts-hurricanes-wildfires-768x576.png"
+                                target="_blank">
+                                https://heartlanddailynews.com/wp-content/uploads/2023/09/droughts-hurricanes-wildfires-768x576.png
+                            </a> (Accessed: 6 July 2025).
+                        </li>
+
+                        <li>
+                            Sostenibilidad (n.d.) <i>“Demasiada realidad para la mente: qué es la ecoansiedad.”</i>
+                            [image].
+                            Available at:
+                            <a href="https://www.sostenibilidad.com/media/816786/protesta-ecoansiedad.jpg"
+                                target="_blank">
+                                https://www.sostenibilidad.com/media/816786/protesta-ecoansiedad.jpg
+                            </a> (Accessed: 6 July 2025).
+                        </li>
+                    </ul>
+                </section>
+
+
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <aside>
+                <h3>Core pages developed:</h3>
+                <ul class="top-level-ul">
+
+                    <li>
+                        <h3>Student 2</h3>
+                    </li>
+                    <ul>
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                    <li><a href="#challenges">
+                            <h3>Challenges and Lessons Learned</h3>
+                        </a></li>
+                    <li><a href="#compliance">
+                            <h3>Compliance</h3>
+                        </a></li>
+                    <li><a href="#ref">
+                            <h3>References</h3>
+                        </a></li>
+
+                </ul>
+            </aside>
+        </div>
+
+        <footer>
+            <p>2025 Climate Awareness Initiative.</p>
+            <div class="pageeditors">
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Page Editor ST1</a></li>
+                    <li><a href="pageEditor_ST2.html">Page Editor ST2</a></li>
+                    <li><a href="pageEditor_ST3.html">Page Editor ST3</a></li>
+                    <li><a href="pageEditor_ST4.html">Page Editor ST4</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
